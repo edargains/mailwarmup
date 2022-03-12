@@ -13,7 +13,7 @@ def send(date):
     _server = os.getenv('SMTP_SERVER')
     _port = os.getenv('SMTP_PORT')
     _pwd = os.getenv('SMTP_PWD')
-    print(_from, _to, _server)
+    #print(_from, _to, _server)
     
     msg = MIMEMultipart()
     msg['From'] = _from

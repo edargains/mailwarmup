@@ -15,12 +15,12 @@ from Mail import sd_mail
 
 def main():
     i = 0
-    while i < 5:
+    while true:
         date_and_time = datetime.now()
         date_and_time = date_and_time.strftime('%d/%m/%Y %Hh%Mmin')
         sd_mail.send(date_and_time)
         i += 1
-        time.sleep(60)
+        time.sleep(300)
 
 if __name__ == "__main__":
 	load_dotenv()
