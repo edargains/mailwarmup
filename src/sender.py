@@ -15,7 +15,7 @@ from Mail import sd_mail
 
 def main():
     i = 0
-    while true:
+    while True:
         date_and_time = datetime.now()
         date_and_time = date_and_time.strftime('%d/%m/%Y %Hh%Mmin')
         sd_mail.send(date_and_time)
