@@ -9,13 +9,18 @@ import pprint
 #from colored import fg, bg, attr
 from dotenv import load_dotenv
 from datetime import datetime
+import time
 
 from Mail import sd_mail
 
 def main():
-    date_and_time = datetime.now()
-    date_and_time = date_and_time.strftime('%d/%m/%Y %H:%M')
-    sd_mail.send(date_and_time)
+    i = 0
+    while i < 5:
+        date_and_time = datetime.now()
+        date_and_time = date_and_time.strftime('%d/%m/%Y %Hh%Mmin')
+        sd_mail.send(date_and_time)
+        i += 1
+        time.sleep(60)
 
 if __name__ == "__main__":
 	load_dotenv()
