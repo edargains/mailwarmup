@@ -20,9 +20,9 @@ def send(date):
         msg['From'] = _from[i]
         msg['To'] = ", ".join(_to)
         msg['Date'] = formatdate(localtime=True)
-        msg['Subject'] = f'Relatório de Envios WIN {date}'
+        msg['Subject'] = f'Relatório de Envios {date}'
 
-        body = f'Segue Relatório WIN de Envios {date}. \n\nAt.te, \nInfraestrutura COGECT'
+        body = f'Segue Relatório de Envios {date}. \n\nAt.te, \nInfraestrutura COGECT'
         msg.attach(MIMEText(body, 'plain'))
 
         s = smtplib.SMTP(_server, _port)
