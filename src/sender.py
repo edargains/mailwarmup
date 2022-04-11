@@ -4,9 +4,8 @@
 
 import os
 import pprint
-#import pdb; pdb.set_trace()
+import random
 
-#from colored import fg, bg, attr
 from dotenv import load_dotenv
 from datetime import datetime
 import time
@@ -14,13 +13,11 @@ import time
 from Mail import sd_mail
 
 def main():
-    #i = 0
     while True:
         date_and_time = datetime.now()
         date_and_time = date_and_time.strftime('%d/%m/%Y %H:%M:%S')
         sd_mail.send(date_and_time)
-     #   i += 1
-        time.sleep(120)
+        time.sleep(random.randint(65,120))
 
 if __name__ == "__main__":
         load_dotenv()
