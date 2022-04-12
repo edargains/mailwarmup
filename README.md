@@ -1,7 +1,7 @@
 # Instalação
 
 ```bash
-git clone https://gitlab.fortaleza.ce.gov.br/erick.medrado/mailwarmup.git
+git clone https://github.com/edargains/mailwarmup.git
 cd mailwarmup
 python3 -m venv env
 source env/bin/activate
