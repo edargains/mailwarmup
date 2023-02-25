@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "mailwarmup"
+version = "2.0.0"
+description = "Script para aquecimento de envio de E-Mail"
+authors = ["Erick Medrado <erick.medrado@sepog.fortaleza.ce.gov.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+mkdocs = "^1.4.2"
+datetime = "^5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.12.0"
+pip-audit = "^2.4.14"
+ipykernel = "^6.21.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
