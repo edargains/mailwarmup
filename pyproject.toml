@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mailwarmup"
-version = "2.0.0"
+version = "1.0.0"
 description = "Script to constantly send e-mails and reduce the chances of falling into spam."
 authors = ["Erick Medrado <erickdargains@gmail.com>"]
 classifiers = [
