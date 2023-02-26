@@ -1,8 +1,14 @@
 [tool.poetry]
 name = "mailwarmup"
 version = "2.0.0"
-description = "Script para aquecimento de envio de E-Mail"
-authors = ["Erick Medrado <erick.medrado@sepog.fortaleza.ce.gov.br>"]
+description = "Script to constantly send e-mails and reduce the chances of falling into spam."
+authors = ["Erick Medrado <erickdargains@gmail.com>"]
+classifiers = [
+    "License :: MIT License",
+]
+
+[project.urls]
+Source = "https://github.com/edargains/mailwarmup.git"
 
 [tool.poetry.dependencies]
 python = "^3.11"
